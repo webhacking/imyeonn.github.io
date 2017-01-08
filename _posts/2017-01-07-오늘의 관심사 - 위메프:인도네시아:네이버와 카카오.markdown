@@ -1,7 +1,7 @@
 ---
-title: "오늘의 관심사"
+title: "오늘의 관심사 - 위메프/인도네시아/네이버와 카카오"
 layout: post
-date: 2017-01-05 20:04
+date: 2017-01-07 09:25
 image: /assets/images/post/001/04_00title.png
 headerImage: true
 tag:

@@ -1,7 +1,7 @@
 ---
-title: "오늘의 관심사"
+title: "오늘의 관심사 - 비투링크(B2Link)가 어떤 회사길래"
 layout: post
-date: 2017-01-05 20:04
+date: 2017-01-09 18:01
 image: /assets/images/post/001/04_00title.png
 headerImage: true
 tag:
