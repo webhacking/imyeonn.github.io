@@ -2,7 +2,7 @@
 title: "오늘의 관심사 - 모바일 마케팅/티몬/파이썬 등"
 layout: post
 date: 2017-01-03 17:05
-image: /assets/images/post/001/01title.jpg
+image: /assets/images/post/001/04_00title.jpg
 headerImage: true
 tag:
 - 오늘의 관심사
