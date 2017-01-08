@@ -1,0 +1,23 @@
+---
+title: "오늘의 관심사"
+layout: post
+date: 2017-01-05 20:04
+image: /assets/images/post/001/04_00title.png
+headerImage: true
+tag:
+- 오늘의 관심사
+- 아마존
+blog: true
+star: true
+author: Hyeyeon
+description: 오늘의 관심사
+---
+
+### Summary:
+
+오늘 접했던 소식 중 인상 깊은 내용들을 전합니다.
+
+---
+
+
+#### [(비즈업인터뷰) ‘K뷰티’를 中에 연결시킨 세 남자, 2년 반만에 연매출 350억](http://www.demoday.co.kr/blog/286)

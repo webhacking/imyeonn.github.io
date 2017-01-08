@@ -1,0 +1,36 @@
+---
+title: "오늘의 관심사"
+layout: post
+date: 2017-01-05 20:04
+image: /assets/images/post/001/04_00title.png
+headerImage: true
+tag:
+- 오늘의 관심사
+- 위메프
+- 인도네시아
+- 네이버와 카카오
+blog: true
+star: true
+author: Hyeyeon
+description: 오늘의 관심사
+---
+
+### Summary:
+
+오늘 접했던 소식 중 인상 깊은 내용들을 전합니다.
+
+---
+
+## 위메프
+
+#### [온라인 쇼핑, '무료배송 전쟁' 한 번 더?](http://www.zdnet.co.kr/news/news_view.asp?artice_id=20170105152917)
+
+
+## 인도네시아
+
+#### [(성공적인 인도네시아 진출 방안 #4) 2017년 인도네시아 O2O 산업을 주목하라.](http://platum.kr/archives/74065)
+
+
+## 네이버와 카카오
+
+#### [네이버-카카오, 왜 지도에 공을 들일까](http://www.zdnet.co.kr/news/news_view.asp?artice_id=20170103165135)
