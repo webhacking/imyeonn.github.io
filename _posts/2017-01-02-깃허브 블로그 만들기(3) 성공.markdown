@@ -2,7 +2,7 @@
 title: "깃허브 블로그 만들기 (3) 성공"
 layout: post
 date: 2017-01-01 09:09
-image: /assets/images/post/001/01title.jpg
+image: /assets/images/post/001/03_00title.jpg
 headerImage: true
 tag:
 - 깃허브
