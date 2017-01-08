@@ -2,7 +2,7 @@
 title: "오늘의 관심사 - 이커머스"
 layout: post
 date: 2017-01-04 08:10
-image: /assets/images/post/001/04_00title.jpg
+image: /assets/images/post/001/04_00title.png
 headerImage: true
 tag:
 - 오늘의 관심사
@@ -25,7 +25,7 @@ description: 오늘의 관심사
 
 #### [정말 이커머스로 성공할 수 있을까?](https://brunch.co.kr/@sonujung/23)
 
-{% highlight raw %}
+{% highlight %}
 원문은 [Andy Dunn의 'e-commerce is a bear'](https://medium.com/@dunn/e-commerce-is-a-bear-d233f02d52a5#.2ra867suz)입니다. Sonu Jung님의 번역글 '정말 이커머스로 성공할 수 있을까?'를 읽고 제게 와닿는 점 위주로 정리했습니다.
 {% endhighlight %}
 
@@ -34,6 +34,7 @@ description: 오늘의 관심사
 
 브랜드를 온라인 판매할 때 아마존과 어떻게 경쟁할 것인가? 아마존은 낮은 가격이라는 가장 큰 경쟁력을 가지고 있으며 크라우드 소싱 기반 알고리즘, 경쟁기업 인수 등으로 강력한 상대임에 틀림없다. 가격으로는 아마존을 이길 수 없다. 하지만 이커머스에서 가격은 소비의 가장 큰 변수다. 아무리 고객경험이 잘 형성되어 있고 UI가 예뻐도 비싸면 사람들은 물건을 사지 않는다. 구경만 할 뿐이다. 우리나라에도 아마존이 들어오면 전자상거래 회사들은 다 죽게 될까?
 
+<br>
 
 > Said differently, if your business is standalone e-commerce selling third-party brands, good luck. You can’t generate enough operating profit to scale beyond getting noticed, counter-attacked, and at best acquired. You are forced into stay right where you are.
 
@@ -44,19 +45,19 @@ description: 오늘의 관심사
 
 저자는 아마존에 대응하는 4가지 방법을 제시했다.
 
-1. Proprietary Pricing
+##### 1. Proprietary Pricing
 
 * 일시적으로 좋은 가격을 제시하여 소비자들을 끌어들이는 것(예. 사이버 먼데이)
 
-2. Proprietary Selection
+##### 2. Proprietary Selection
 
 * 특정 고객에게 집중하여 써드파티 브랜드의 독특한 상품을 보여주는 것
 
-3. Proprietary Experience
+##### 3. Proprietary Experience
 
 * 특정 고객에게 집중하여 써드파티 브랜드의 독특한 상품을 보여주는 것
 
-4. Proprietary Merchandise
+##### 4. Proprietary Merchandise
 
 * 다른 곳에서는 구매할 수 없는 그 브랜드 고유의 제품을 온라인으로 판매하는 것
 
