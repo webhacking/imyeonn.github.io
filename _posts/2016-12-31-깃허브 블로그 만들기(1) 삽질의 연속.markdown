@@ -24,7 +24,7 @@ description: 깃허브 블로그 만들기 과정 정리
 
 난 많은 블로그를 가지고 있다. 만들고 지우고, 만들고 지우고, 만들고 지우고.. 몇 년째 같은 과정을 반복했다. 뭔가를 기록하고 저장하는 것을 좋아하는데 문제는 이 기록이 에버노트(Evernote), 베어(Bear), 분더리스트(Wunderlist), 애플 기본메모, 메모장, 마인드노드, 스티커, 포스트잇 등 너무 많은 곳에 흩뿌려져 있다는 것이다.
 
-![pic1](https://github.com/imyeonn/post/blob/master/images/01_01.png?raw=true)
+![pic1](/assets/images/post/001/01_01.png)
 <figcaption class="caption">총체적 난국</figcaption>
 
 <br>
@@ -64,7 +64,7 @@ description: 깃허브 블로그 만들기 과정 정리
 이 글을 참고해서 도전했다. 기억을 더듬어 깃허브 계정을 찾아 로그인하고, 리포지토리를 만들고! 오 여기까지 괜찮다. 근데 페일.
 
 
-02 사진
+![pic2](imyeonn.github.io/assets/images/post/001/01_02.png)
 
 설정의 **Github Pages** 에서 링크에 따르면 커스텀 도메인을 설정하면 <code>CNAME</code>라는 파일이 생성된다는데 내 화면은 다르게 생겼다. <code>CNAME</code>도 생기지 않았다. 자연스레 그 다음단계로도 진전이 불가능했다. 지금 다시 생각해보면 이 게시글의 제목이 <Github Page 만들기 :: 커스텀 도메인의 적용>이라서 내가 만들고 싶은 블로그를 만드는 튜토리얼이 아닌걸까...?
 
