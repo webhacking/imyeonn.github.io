@@ -48,30 +48,31 @@ git config --global user.name "Hyeyeon Yang"
 git config --global user.email "imyeonn@gmail.com"
 ```
 
-`(주의사항)`
- user.name 대신 내 이름을 쓰는 게 아니다. user.name 은 그대로 쓰고 " " 안에 자신의 이름을 쓴다.
+##### (주의사항)
+user.name 대신 내 이름을 쓰는 게 아니다. user.name 은 그대로 쓰고 " " 안에 자신의 이름을 쓴다.
 
 
 #### 2. 만들었던 리포지토리의 이름을 내 컴퓨터(로컬)에 옮긴다.
 
- 아까 내가 만들었던 저장소의 이름은 **imyeonn.github.io** 이다. 이 저장소, 쉽게 말해서 폴더는 온라인에만 있으니까 내 컴퓨터에도 이 폴더를 만들어줘야 한다. 폴더를 만든 다음에는 그 폴더로 들어간다.
+아까 내가 만들었던 저장소의 이름은 **imyeonn.github.io** 이다. 이 저장소, 쉽게 말해서 폴더는 온라인에만 있으니까 내 컴퓨터에도 이 폴더를 만들어줘야 한다. 폴더를 만든 다음에는 그 폴더로 들어간다.
 
- ```
- mkdir ~/imyeonn.github.io
- cd ~/imyeonn.github.io
- git init
- ```
+```
+mkdir ~/imyeonn.github.io
+cd ~/imyeonn.github.io
+git init
+```
 
 #### 3. 테스트 파일을 만들어서 제대로 로컬과 온라인이 동기화되는지 확인하기 위해 커밋한다.
 
- ```
- touch test.txt
- git status
- git add test.txt
- git commit -m "Add test.txt"
- ```
+```
+touch test.txt
+git status
+git add test.txt
+git commit -m "Add test.txt"
+```
 
-`팁`
+
+##### (팁)
 
 * 나중에 알게 됐는데 여러개의 파일이 추가됐을 때 일일히 `git add 각각 파일명`할 필요없이 'git add .' 한 방으로 해결할 수 있다.
 
@@ -136,7 +137,8 @@ git push
 
 깃허브를 새로고침한 결과,
 
-![pic4](/assets/images/post/001/02_04.png)<figcaption class="caption">성공....감격....</figcaption>
+![pic4](/assets/images/post/001/02_04.png)
+<figcaption class="caption">성공....감격....</figcaption>
 
 <br>
 
@@ -146,10 +148,13 @@ git push
 git pull
 ```
 
-![pic5](/assets/images/post/001/02_05.png)<figcaption class="caption">git pull</figcaption>
+![pic5](/assets/images/post/001/02_05.png)
+<figcaption class="caption">git pull</figcaption>
 
+<br>
 
-![pic6](/assets/images/post/001/02_06.png)<figcaption class="caption">README.md가 내 컴퓨터에 생겼다</figcaption>
+![pic6](/assets/images/post/001/02_06.png)
+<figcaption class="caption">README.md가 내 컴퓨터에 생겼다</figcaption>
 
 <br>
 
