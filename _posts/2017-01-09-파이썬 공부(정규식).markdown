@@ -2,7 +2,7 @@
 title: "파이썬 공부(정규식)"
 layout: post
 date: 2017-01-09 14:35
-image: /assets/images/post/001/04_00title.png
+image: /assets/images/post/001/08_00title.png
 headerImage: true
 tag:
 - 파이썬
@@ -23,6 +23,9 @@ description: 파이썬
 ![pic1](/assets/images/post/001/08_01.png)
 <figcaption class="caption">Overview</figcaption>
 
+
+
+---
 ## 기본 정규식
 
 정규식을 이용하기 위해 파이썬에서 `re`모듈을 불러온다. 정규식으로 a나 b를 찾아보자.
@@ -43,6 +46,12 @@ print(r.match("abcd"))
 
 {% endhighlight %}
 
+run 결과)
+{% highlight python %}
+<_sre.SRE_Match object; span=(4, 5), match='a'>
+None
+<_sre.SRE_Match object; span=(0, 1), match='a'>
+{% endhighlight %}
 
 
 ---
@@ -56,6 +65,14 @@ a = re.compile("a,c")
 a.search("abc")
 {% endhighlight %}
 
+run 결과)
+{% highlight python %}
+<_sre.SRE_Match object; span=(4, 5), match='a'>
+None
+<_sre.SRE_Match object; span=(0, 1), match='a'>
+{% endhighlight %}
+
+
 #### ? : 바로 앞의 문자가 존재하거나 존재하지 않음
 
 {% highlight python %}
@@ -65,6 +82,14 @@ b.search("ac")
 b.search("abc")
 b.search("abbc")
 {% endhighlight %}
+
+run 결과)
+{% highlight python %}
+<_sre.SRE_Match object; span=(4, 5), match='a'>
+None
+<_sre.SRE_Match object; span=(0, 1), match='a'>
+{% endhighlight %}
+
 
 ##### * : 바로 앞의 문자가 존재하지 않거나 갯수에 상관없이 존재
 
@@ -76,6 +101,14 @@ b.search("abc")
 b.search("abbc")
 {% endhighlight %}
 
+run 결과)
+{% highlight python %}
+<_sre.SRE_Match object; span=(4, 5), match='a'>
+None
+<_sre.SRE_Match object; span=(0, 1), match='a'>
+{% endhighlight %}
+
+
 #### + : 바로 앞의 문자가 한 번 이상 존재
 
 {% highlight python %}
@@ -86,7 +119,14 @@ b.search("abc")
 b.search("abbc")
 {% endhighlight %}
 
+
+run 결과)
 {% highlight python %}
+<_sre.SRE_Match object; span=(4, 5), match='a'>
+None
+<_sre.SRE_Match object; span=(0, 1), match='a'>
+{% endhighlight %}
+
 
 #### ^ : 시작문자 지정
 {% highlight python %}
@@ -94,6 +134,14 @@ b = re.compile("^a")
 b.search("ab")
 b.search("ba")
 {% endhighlight %}
+
+run 결과)
+{% highlight python %}
+<_sre.SRE_Match object; span=(4, 5), match='a'>
+None
+<_sre.SRE_Match object; span=(0, 1), match='a'>
+{% endhighlight %}
+
 
 
 #### $ : 끝나는 문자 지정
@@ -103,6 +151,14 @@ b = re.compile("c$")
 b.search("abc")
 b.search("cba")
 {% endhighlight %}
+
+run 결과)
+{% highlight python %}
+<_sre.SRE_Match object; span=(4, 5), match='a'>
+None
+<_sre.SRE_Match object; span=(0, 1), match='a'>
+{% endhighlight %}
+
 
 
 
@@ -118,6 +174,7 @@ re.findall("\d+", "이 제품의 가격은 13900원입니다.")
 re.findall("\d+", "이 제품의 가격은 13,900원입니다.")
 {% endhighlight %}
 
+
 #### split
 
 {% highlight python %}
@@ -126,11 +183,21 @@ re.split("[:]+", "제품명 : 가격 : 후기")
 re.split("[ ]+", "제품명 : 가격 : 후기")
 {% endhighlight %}
 
+
 #### sub
 
 {% highlight python %}
 
 re.sub("@", " , ", "imyeonn@gmail.com")
 {% endhighlight %}
+
+
+run 결과)
+{% highlight python %}
+<_sre.SRE_Match object; span=(4, 5), match='a'>
+None
+<_sre.SRE_Match object; span=(0, 1), match='a'>
+{% endhighlight %}
+
 
 ---
