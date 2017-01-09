@@ -46,12 +46,6 @@ print(r.match("abcd"))
 
 {% endhighlight %}
 
-run 결과)
-{% highlight python %}
-<_sre.SRE_Match object; span=(4, 5), match='a'>
-None
-<_sre.SRE_Match object; span=(0, 1), match='a'>
-{% endhighlight %}
 
 
 ---
@@ -65,12 +59,7 @@ a = re.compile("a,c")
 a.search("abc")
 {% endhighlight %}
 
-run 결과)
-{% highlight python %}
-<_sre.SRE_Match object; span=(4, 5), match='a'>
-None
-<_sre.SRE_Match object; span=(0, 1), match='a'>
-{% endhighlight %}
+
 
 
 #### ? : 바로 앞의 문자가 존재하거나 존재하지 않음
@@ -83,12 +72,7 @@ b.search("abc")
 b.search("abbc")
 {% endhighlight %}
 
-run 결과)
-{% highlight python %}
-<_sre.SRE_Match object; span=(4, 5), match='a'>
-None
-<_sre.SRE_Match object; span=(0, 1), match='a'>
-{% endhighlight %}
+
 
 
 ##### * : 바로 앞의 문자가 존재하지 않거나 갯수에 상관없이 존재
@@ -101,12 +85,6 @@ b.search("abc")
 b.search("abbc")
 {% endhighlight %}
 
-run 결과)
-{% highlight python %}
-<_sre.SRE_Match object; span=(4, 5), match='a'>
-None
-<_sre.SRE_Match object; span=(0, 1), match='a'>
-{% endhighlight %}
 
 
 #### + : 바로 앞의 문자가 한 번 이상 존재
@@ -120,14 +98,6 @@ b.search("abbc")
 {% endhighlight %}
 
 
-run 결과)
-{% highlight python %}
-<_sre.SRE_Match object; span=(4, 5), match='a'>
-None
-<_sre.SRE_Match object; span=(0, 1), match='a'>
-{% endhighlight %}
-
-
 #### ^ : 시작문자 지정
 {% highlight python %}
 b = re.compile("^a")
@@ -135,12 +105,6 @@ b.search("ab")
 b.search("ba")
 {% endhighlight %}
 
-run 결과)
-{% highlight python %}
-<_sre.SRE_Match object; span=(4, 5), match='a'>
-None
-<_sre.SRE_Match object; span=(0, 1), match='a'>
-{% endhighlight %}
 
 
 
@@ -152,12 +116,6 @@ b.search("abc")
 b.search("cba")
 {% endhighlight %}
 
-run 결과)
-{% highlight python %}
-<_sre.SRE_Match object; span=(4, 5), match='a'>
-None
-<_sre.SRE_Match object; span=(0, 1), match='a'>
-{% endhighlight %}
 
 
 
@@ -191,13 +149,6 @@ re.split("[ ]+", "제품명 : 가격 : 후기")
 re.sub("@", " , ", "imyeonn@gmail.com")
 {% endhighlight %}
 
-
-run 결과)
-{% highlight python %}
-<_sre.SRE_Match object; span=(4, 5), match='a'>
-None
-<_sre.SRE_Match object; span=(0, 1), match='a'>
-{% endhighlight %}
 
 
 ---
