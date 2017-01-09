@@ -35,6 +35,7 @@ description: 파이썬
 * 사용된 함수: `search`와 `match`
 
 > search  : [ ] 안 글자 중 일부라도 포함되면 찾아줌
+>
 > match   : [ ] 안 글자와 완전히 동일한 글자를 찾아줌
 
 
