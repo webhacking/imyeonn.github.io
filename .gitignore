@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 .DS_Store
 _site
 .sass-cache
 .npm-debug.log
 Gemfile.lock
+=======
+_site
+.sass-cache
+>>>>>>> f2fcef851a05cfc5523e7a032aca3cb46812494b
