@@ -1,6 +1,6 @@
 # main text of home
-name:         @imyeonn
-bio:          Hyeyeon's Blog
+name:  @imyeonn
+bio:  Hyeyeon's Blog
 
 # twitter summary info
 description:  A blog about E-commerce and Product Management
@@ -98,7 +98,7 @@ sass:
     sass_dir: _sass
     style: :compressed
 
-gems: 
+gems:
   - jemoji
   - jekyll-mentions
   - jekyll-seo-tag
@@ -106,7 +106,7 @@ gems:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-paginate
-parginate:  5
+parginate:  3
 parginate_path: "page:num"
 
 jekyll-mentions:
