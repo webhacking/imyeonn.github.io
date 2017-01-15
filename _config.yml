@@ -14,7 +14,7 @@ url:          https://imyeonn.github.io
 # your url: http://USERNAME.github.io
 
 # jekyll 3.0 error
-# permalink:    /:title/
+permalink:    /:title/
 
 markdown:     kramdown
 highlighter:  rouge
@@ -98,7 +98,7 @@ sass:
     sass_dir: _sass
     style: :compressed
 
-gems:
+gems: [jekyll-paginate]
   - jemoji
   - jekyll-mentions
   - jekyll-seo-tag
