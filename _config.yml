@@ -98,14 +98,14 @@ sass:
     sass_dir: _sass
     style: :compressed
 
-gems: [jekyll-paginate]
+gems: 
   - jemoji
   - jekyll-mentions
   - jekyll-seo-tag
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-gist
-#  - jekyll-paginate
+  - jekyll-paginate
 parginate:  5
 parginate_path: "page:num"
 
