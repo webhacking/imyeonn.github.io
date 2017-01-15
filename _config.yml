@@ -13,7 +13,8 @@ picture:      assets/images/profile.jpg
 url:          https://imyeonn.github.io
 # your url: http://USERNAME.github.io
 
-permalink:    /:title/
+# jekyll 3.0 error
+# permalink:    /:title/
 
 markdown:     kramdown
 highlighter:  rouge
