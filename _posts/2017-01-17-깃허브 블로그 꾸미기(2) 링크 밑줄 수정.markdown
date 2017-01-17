@@ -29,6 +29,8 @@ description: 깃허브 내맘대로 꾸미기
 ![pic1](/assets/images/post/001/15_01.png)
 <figcaption class="caption">기존 화면</figcaption>
 
+<br>
+
 ![pic2](/assets/images/post/001/15_02.png)
 <figcaption class="caption">PORTFOLIO를 주목!</figcaption>
 
@@ -40,6 +42,8 @@ description: 깃허브 내맘대로 꾸미기
 
 ![pic3](/assets/images/post/001/15_03.png)
 <figcaption class="caption">.html</figcaption>
+
+<br>
 
 {% highlight css %}
 /*.css*/
