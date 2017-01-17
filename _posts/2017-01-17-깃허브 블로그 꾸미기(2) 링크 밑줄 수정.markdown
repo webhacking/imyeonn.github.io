@@ -95,7 +95,7 @@ a
 	color: $delta
 	text-decoration: none
 	font-weight: 500
-	border-bottom: 1px dotted $delta // 여기 수정함
+	border-bottom: 1px dotted $delta   // 여기 수정함
 {% endhighlight %}
 
 ![pic9](/assets/images/post/001/15_09.png)
