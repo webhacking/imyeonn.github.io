@@ -1,13 +1,13 @@
 ---
-title: "깃허브 블로그 꾸미기 (1) 링크 색 변경"
+title: "깃허브 블로그 꾸미기 (2) 링크에 밑줄 그리기"
 layout: post
-date: 2017-01-17 16:25
-image: /assets/images/post/001/14_06.png
+date: 2017-01-17 17:05
+image: /assets/images/post/001/15_06.png
 headerImage: true
 tag:
 - 깃허브
 - jekyll
-- 링크 색 변경
+- 링크 밑줄
 blog: true
 star: true
 author: Hyeyeon
@@ -16,7 +16,7 @@ description: 깃허브 내맘대로 꾸미기
 
 ### Summary:
 
-기존 템플릿의 링크 색을 제가 좋아하는 색으로 변경했습니다.
+기존 템플릿의 링크에 들어가있던 밑줄 스타일을 수정했습니다.
 
 ---
 
@@ -24,43 +24,42 @@ description: 깃허브 내맘대로 꾸미기
 
 ## 기존 화면
 
-난 [Indigo Minimalist Jekyll Template 테마](https://github.com/sergiokopplin/indigo)를 이용하고 있다. 이 테마는 깔끔하고 다 좋은데, 링크 색이 보라색인 게 맘에 들지 않는다. 이미 들어갔던 링크 같고 칙칙하달까. 오늘 이 보라색을 다른 색으로 바꿔보자.
+지난 포스팅에서 여기까지 만들었다. 겁먹었던 것보다 훨씬 쉽게 속성을 바꿀 수 있길래 하나 더 건드려보기로 했다. 며칠 전 생활코딩의 [겁나 빠른 웹 레시피 - 사진 중심의 웹사이트 만들기](https://opentutorials.org/module/2398/13815)를 수강한 적이 있다. 거기서 예쁘게 밑줄을 긋는 방법을 배웠는데 이걸 써먹어보자.
 
-![pic1](/assets/images/post/001/14_01.png)<figcaption class="caption">기존 블로그</figcaption>
+![pic1](/assets/images/post/001/14_06.png)<figcaption class="caption">기존 화면</figcaption>
 
-## 색상 속성이 어디에 숨어있나
+![pic2](/assets/images/post/001/15_01.png)<figcaption class="caption">PORTFOLIO를 주목!</figcaption>
 
-방법은 간단하다. 색상 속성을 집어넣은 코드를 찾아서 해당값을 지우고 내가 원하는 색을 쓰고 푸쉬하면 된다. 내 깃허브 블로그 레포지토리에는 6개의 세부 폴더가 있다.
+## 생활코딩 복습
 
-* \_includes
-* \_layouts : 온갖 .html 파일들이 있다.
-* \_posts : 여기에는 포스팅할 마크다운 문서를 넣는다.
-* \_sass :
-* \_assets : 각종 사진 파일이 들어있다.
-* \_blog : index.html 하나밖에 없다.
+생활코딩의 **겁나 빠른 웹 레시피** 수업에서는 css를 사용해서 내 블로그에는 적용이 안 될 것 같기도 한데 일단 해보고 막히면 구글신의 도움을 받기로 했다. 웹 레시피 수업에서 배운 바에 의하면 **PORTFOLIO** 가 <h1> 태그의 <a> 안에 들어있기 때문에 .css에서 헤더의 h1, a 안에 원하는 밑줄 속성을 넣으면 된다. 예제에서는 투명도 0.5 정도의 흰색 1픽셀 점선 밑줄을 그었다.
 
-보통 꾸미는 내용들은 .css나 .sass로 확장자가 설정되어 있기 때문에 그 파일들이 들어있는 `_includes`와 `_sass` 폴더 내부를 뒤져봤다. 결론부터 말하자면 `_sass/base/`의 `general.sass`에 블로그에 들어가는 각종 문자에 대한 색상들이 설정되어 있었다.
+![pic3](/assets/images/post/001/15_03.png)
+![pic4](/assets/images/post/001/15_04.png)
 
-![pic2](/assets/images/post/001/14_02.png)
+{% highlight css %}
+#header h1 a{
+  color:rgba(255, 250, 250, 0.7);
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.5);  /*이 부분!!*/
+}
+{% endhighlight %}
 
-html에서 링크를 설정할 땐 <a ></a>를 이용한다. 31번째 줄을 보면 a 태그에는 $delta 색과 underline 표시를 하도록 되어 있다. 그런데 구글링해보니 delta라는 색이 보라색이 아니다. 뭔가 더 있나보다.
+이 코드를 그대로 general.sass에 넣었을 때 어떤 변화가 있나 보기로 한다.
 
-![pic3](/assets/images/post/001/14_03.png)
-![pic4](/assets/images/post/001/14_04.png)
+![pic5](/assets/images/post/001/15_05.png)
 
-`_sass/base/`의 `variables.sass`에 $delta색이 정의되어 있었다. #4b0082 색을 구글에 치면 아래처럼 색생과 명칭을 알 수 있다.
+![pic6](/assets/images/post/001/15_06.png)<figcaption class="caption">그 결과 아무 변화 없음</figcaption>
 
- #4b0082을 #59ABE3으로 변경했다. 그 다음 저장, 깃 add, commit, push!
+그럼 그렇지.
 
-![pic5](/assets/images/post/001/14_05.png)
+## 구글신에게
 
+이제 와서 생각하니 당연한 얘기인데 css와 sass가 문법 차이가 있나보다. 구글에 `sass underline style`을 검색해서 소스코드 샘플을 찾아보았다.
 
-## 변경 사항 확인
+{% highlight sass %}
 
-푸쉬한 다음 [imyeonn.github.io](https://imyeonn.github.io)에 재접속했다. 그 결과,
-
-![pic6](/assets/images/post/001/14_06.png)<figcaption class="caption">변경된 색상</figcaption>
-
+{% endhighlight %}
 **완성!!!!!**
 
 와. 이렇게 쉽게, 빠르게, 에러없이 뭔가를 완성한 게 얼마만인가.
