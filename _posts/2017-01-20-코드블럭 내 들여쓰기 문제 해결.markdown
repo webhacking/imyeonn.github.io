@@ -166,10 +166,10 @@ tt
 
 해결법은 2가지로 나뉜다.
 
-1. 마진을 없애기
-2. tt에서 마진을 유지하되 코드가 여러 줄로 표시될 때(pre)에서는 tt의 마진이 반영되지 않도록 설정하기
+1. tt(낱말코드 속성)의 마진 없애기
+2. tt에서 마진을 유지하되 pre(여러 줄 코드)일 때는 tt의 마진이 반영되지 않도록 설정하기
 
-1번 방법을 쓰면 코드 양옆이 너무 빡빡해져서 싫다. 2번을 시도하자.
+1번 방법을 쓰면 여러 줄 코드에서 첫 줄 들여쓰기가 없어지는 대신 낱말코드 양옆이 너무 빡빡해져서 싫다. 2번을 시도하자.
 
 #### 2번 방법 시도
 
@@ -184,9 +184,9 @@ pre
 		margin: none
 {% endhighlight %}
 
-pre 안에 대해서는 code의 margin 설정을 사용하지 않도록 두고 블로그를 새로고침했다. 변한 게 없다.
-
 ![pic7](/assets/images/post/001/19_07.png)
+
+pre 안에 대해서는 code의 margin 설정을 사용하지 않도록 두고 블로그를 새로고침했다. 변한 게 없다.
 
 #### 2번 방법 재시도
 
@@ -203,9 +203,9 @@ pre
 		margin: none
 {% endhighlight %}
 
-역시나 변한 게 없다.
-
 ![pic7](/assets/images/post/001/19_07.png)
+
+역시나 변한 게 없다.
 
 #### 2번 방법 재재시도
 
@@ -222,9 +222,9 @@ pre
 		margin: 0 0 0 0
 {% endhighlight %}
 
-는 fail.
-
 ![pic7](/assets/images/post/001/19_07.png)
+
+는 fail.
 
 #### 2번 방법 재재재시도
 
@@ -241,13 +241,13 @@ pre
 		margin: 0 0 0 -10px
 {% endhighlight %}
 
-오!!!!! 조금이나마 import가 왼쪽으로 움직였다. 이유는 모른다.
-
 ![pic8](/assets/images/post/001/19_08.png)
+
+오!!!!! import가 왼쪽으로 움직였다. 이제 알겠다. tt가   `+5px`일 때 pre가 `0px`이면 pre 안 code는 `5+0=5px`만큼 튀어나온다. 따라서 pre가 `-10px`이면 pre 안 code는 `5-10=-5px`만큼 튀어나온다. 결국 pre 안 code를 `margin: 0 0 0 -5px`로 두면 되는 문제였다.
 
 #### 2번 방법 재재재재시도
 
-`margin: 0 0 0 -15px`로 더 옮겨봤다.
+`margin: 0 0 0 -5px`으로 바꿨다.
 
 {% highlight scss %}
 code,
@@ -257,10 +257,45 @@ tt
 pre
 	margin-bottom: 1.75em
 	code                           
-		margin: 0 0 0 -15px
+		margin: 0 0 0 -5px
 {% endhighlight %}
 
-오!!!!! 조금이나마 import가 왼쪽으로 움직였다. 이유는 모른다.
+![pic9](/assets/images/post/001/19_09.png)
 
-![pic8](/assets/images/post/001/19_08.png)
+해결!
+
 ---
+
+## 최종 코드
+
+{% highlight scss %}
+code,
+tt
+	padding: 3px 5px
+	font-family: $fontMonospace
+	font-size: 13px
+	line-height: 20px
+	background: $codebackground
+	margin: 0 5px 0 5px
+	border-radius: 5px
+	font-weight: 400
+
+pre
+	box-sizing: border-box
+	margin: 0 0 1.75em 0
+	width: 100%
+	padding: 5px 10px
+	font-family: $fontMonospace
+	font-size: 1.2rem
+	line-height: 2rem
+	overflow: auto
+	code
+		background: none
+		margin: 0 0 0 -5px
+	background: #fff
+	border: 1px solid $epsilon
+	border-radius: 2px
+{% endhighlight %}
+
+![pic10](/assets/images/post/001/19_10.png)
+<figcaption class="caption">결과 화면</figcaption>
