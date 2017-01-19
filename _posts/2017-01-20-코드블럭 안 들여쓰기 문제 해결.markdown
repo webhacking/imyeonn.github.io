@@ -1,5 +1,5 @@
 ---
-title: "코드블럭 안 들여쓰기 문제 해결"
+title: "코드블럭 내 들여쓰기 문제 해결"
 layout: post
 date: 2017-01-19 10:02
 image: /assets/images/post/001/19_00title.png
@@ -10,7 +10,7 @@ tag:
 - 들여쓰기
 blog: true
 author: Hyeyeon
-description: css 기초 정리
+description: 코드블럭 내 들여쓰기 문제 해결
 ---
 
 ### Summary:
@@ -155,7 +155,7 @@ tt
 	margin: 0 0 0 20px
 {% endhighlight %}
 
-![pic5](/assets/images/post/001/19_05.png)
+![pic6](/assets/images/post/001/19_06.png)
 <figcaption class="caption">왼쪽 여백이 늘어난다</figcaption>
 
 **[case2]** 가 가장 안정적으롭 보였다. 그러나 이 때 왼쪽 여백이 증가함에 따라 코드블럭의 첫째 줄에도 왼쪽 여백이 증가하는 결과가 생겼다. (근데 왜 첫째 줄만 마진이 늘어나는거지? 마진은 왼쪽 전체에 대해 늘어나야되는거 아닌가? 우선 이 질문은 보류.)
@@ -170,30 +170,97 @@ tt
 2. tt에서 마진을 유지하되 코드가 여러 줄로 표시될 때(pre)에서는 tt의 마진이 반영되지 않도록 설정하기
 
 1번 방법을 쓰면 코드 양옆이 너무 빡빡해져서 싫다. 2번을 시도하자.
-{% highlight html %}
-<header>
-  <h1>title</h1>
-</header>
+
+#### 2번 방법 시도
+
+{% highlight scss %}
+code,
+tt
+	margin: 0 5px 0 5px
+
+pre
+	margin: 0 0 1.75em 0
+	code                           
+		margin: none
 {% endhighlight %}
 
-* nav: 네이게이션을 위한 리스트임을 의미함
-{% highlight html %}
-<nav>
-  <ol>
-    <li>list 1</li>
-    <li>list 2</li>
-  </ol>
-</nav>
+pre 안에 대해서는 code의 margin 설정을 사용하지 않도록 두고 블로그를 새로고침했다. 변한 게 없다.
+
+![pic7](/assets/images/post/001/19_07.png)
+
+#### 2번 방법 재시도
+
+pre 안에 margin이 이미 있기 때문에 얘가 못 알아듣는 건가 싶어 pre의 margin 을 margin-bottom으로 바꿔봤다.
+
+{% highlight scss %}
+code,
+tt
+	margin: 0 5px 0 5px
+
+pre
+	margin-bottom: 1.75em
+	code                           
+		margin: none
 {% endhighlight %}
 
-* article: 문서의 본문임을 의미함
-{% highlight html %}
-<article>
-  <ul>
-    <li>list 1</li>
-    <li>list 2</li>
-  </ul>
-</article>
+역시나 변한 게 없다.
+
+![pic7](/assets/images/post/001/19_07.png)
+
+#### 2번 방법 재재시도
+
+`margin: none`을 `margin: 0 0 0 0`으로 바꾸면 될까?
+
+{% highlight scss %}
+code,
+tt
+	margin: 0 5px 0 5px
+
+pre
+	margin-bottom: 1.75em
+	code                           
+		margin: 0 0 0 0
 {% endhighlight %}
 
+는 fail.
+
+![pic7](/assets/images/post/001/19_07.png)
+
+#### 2번 방법 재재재시도
+
+`margin: 0 0 0 0`이 안먹히니까 아예 왼쪽으로 더 보내버릴 생각으로 `0 0 0 -10px`를 해봤다.
+
+{% highlight scss %}
+code,
+tt
+	margin: 0 5px 0 5px
+
+pre
+	margin-bottom: 1.75em
+	code                           
+		margin: 0 0 0 -10px
+{% endhighlight %}
+
+오!!!!! 조금이나마 import가 왼쪽으로 움직였다. 이유는 모른다.
+
+![pic8](/assets/images/post/001/19_08.png)
+
+#### 2번 방법 재재재재시도
+
+`margin: 0 0 0 -15px`로 더 옮겨봤다.
+
+{% highlight scss %}
+code,
+tt
+	margin: 0 5px 0 5px
+
+pre
+	margin-bottom: 1.75em
+	code                           
+		margin: 0 0 0 -15px
+{% endhighlight %}
+
+오!!!!! 조금이나마 import가 왼쪽으로 움직였다. 이유는 모른다.
+
+![pic8](/assets/images/post/001/19_08.png)
 ---
