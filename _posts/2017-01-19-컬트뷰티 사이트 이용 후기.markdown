@@ -24,23 +24,23 @@ description: 컬트뷰티 이용 후기
 
 ## 컬트뷰티
 
-[컬트뷰티](https://cultbeauty.co.kr/)는 여러 브랜드의 홪아품을 모아서 판매하는 이커머스다. [세포라](http://www.sephora.com/)나 [샵스프링](https://www.shopspring.com/)처럼 화장품을 전문적으로 유통한다. 우리나라로 치면 미미박스 정도 되겠다.
+[컬트뷰티](https://cultbeauty.co.kr/)는 여러 브랜드의 화장품을 모아서 판매하는 이커머스다. [세포라](http://www.sephora.com/)나 [샵스프링](https://www.shopspring.com/)처럼 화장품을 전문적으로 유통한다. 우리나라로 치면 미미박스 정도 되겠다.
 
 ![pic1](/assets/images/post/001/18_00title.png)
 
 컬트뷰티는 영국 회사이기 때문에 영국 파운드(£)로 가격이 매겨지고 있다. 여기서는 가격에 택스가 포함되어 상세페이지에 표시되기 때문에 유럽 외 배송의 경우 일정 택스가 감면된 비용이 자동 청구된다. 컬트뷰티의 특장점은 **50파운드 이상 구매 시 전세계 무료배송** 이라는 것! 배송 정책은 아래에 자세히 설명되어 있다. 비슷한 브랜드를 취급하는 세포라가 10만원 이상 구매 시 15,000원이라는 고정 배송비를 부과한다는 점을 생각하면 컬트뷰티가 짱이다.
 
 <br>
-<!--
-## SHIPPING
 
-**Standard Delivery is FREE worldwide on all orders over £50 (except for mainland China, Hong Kong and New Zealand).**
-
-We have three worldwide shipping options; Standard Delivery; Priority Tracked Delivery - DHL; DPD UK. Shipping costs are determined by zone and a full breakdown can be found below.
-
-We also offer Saturday delivery for limited post codes within the United Kingdom.
-
-You will have the opportunity to select your preferred delivery method as your proceed through checkout, and will be able to check the total order value (including postage & packaging costs) before you complete the transaction. -->
+> ## SHIPPING
+>
+> **Standard Delivery is FREE worldwide on all orders over £50 (except for mainland China, Hong Kong and New Zealand).**
+>
+> We have three worldwide shipping options; Standard Delivery; Priority Tracked Delivery - DHL; DPD UK. Shipping costs are determined by zone and a full breakdown can be found below.
+>
+> We also offer Saturday delivery for limited post codes within the United Kingdom.
+>
+> You will have the opportunity to select your preferred delivery method as your proceed through checkout, and will be able to check the total order value (including postage & packaging costs) before you complete the transaction.
 
 ---
 
