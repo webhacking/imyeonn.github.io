@@ -1,6 +1,6 @@
 # main text of home
-name:  "@imyeonn"
-bio:  Hyeyeon's Blog
+name:  "Hyeyeon"
+bio:  A blog about E-commerce and Product Management
 
 # twitter summary info
 description:  A blog about E-commerce and Product Management
@@ -35,7 +35,7 @@ disqus:  mydisqus
 # google: mygoogle
 # instagram: myinstagram
 # pinterest: mypinterest
-# linkedin: mylinkedin
+linkedin: mylinkedin
 # youtube: myyoutube
 #spotify: myspotify
 github:  imyeonn
@@ -50,7 +50,7 @@ authors:
     johndoe:
         name: Hyeyeon
         bio: I'm Hyeyeon, interested in E-commerce and Product Management.
-        external-image: false
+        external-image: true
         picture: assets/images/profile.jpg
     #     twitter: johndoe
     # jamesfoster:
