@@ -115,11 +115,9 @@ You will have the opportunity to select your preferred delivery method as your p
 
 ## 도착
 
-{% highlight %}
 * 주문 - 2017년 1월 10일
 * 출고 - 2017년 1월 10일
 * 도착 - 2017년 1월 18일
-{% endhighlight %}
 
 배송은 7일 남짓 걸렸다. 10일 밤에 주문했고 주말이 껴있음에도 꽤 빨리 왔다. 제품 및 포장이 훼손되지 않았으며 제품 자체에 대해서도 예상했던 패키지, 컬러, 발림성과 거의 맞아떨어졌다. 이번 직구도 성공이다.
 
