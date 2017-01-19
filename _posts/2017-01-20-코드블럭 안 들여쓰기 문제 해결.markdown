@@ -64,7 +64,7 @@ pre
 	border-radius: 2px
 {% endhighlight %}
 
-* 내가 건든 후
+* 내가 건든 뒤
 
 {% highlight scss %}
 code,
@@ -96,50 +96,70 @@ pre
 
 ---
 
-## 링크 띄우기
+## 하나씩 바꿔보기
 
-매번 까먹어서 네이버에 검색하는 내용.
+뭘 잘못했는지 바로 눈에 들어오지 않아서 변경사항을 다 초기세팅으로 되돌린 뒤 한 줄씩 바꾸면서 커밋했다. 이렇게 하면 시간은 걸릴지라도 어떤 코드가 들여쓰기에 영향을 주는 지 알 수 있다.
 
-{% highlight html %}
-<!-- 새 창에 링크 띄우기 -->
-<a href="hhttps://github.com/imyeonn" target="_blank">깃허브 링크</a>
-<!-- 현재 창에 링크 띄우기 -->
-<a href="hhttps://github.com/imyeonn" target="_self">깃허브 링크</a>
+범인은 이 녀석이다.
+
+{% highlight scss %}
+code,
+tt
+	margin: 0 5px 0 5px            // 글자 주변 거리 늘림
 {% endhighlight %}
 
 ---
 
-## 리스트
+## margin이 왜 문제일까
 
-* 리스트 기본
-{% highlight html %}
-<li>list 1</li>
-<li>list 2</li>
+#### * [case 1] margin: 0 0 0 0
+
+{% highlight scss %}
+code,
+tt
+	margin: 0 0 0 0
 {% endhighlight %}
 
-* 리스트 그룹화 - unordered list
-{% highlight html %}
-<ul>
-  <li>list 1</li>
-  <li>list 2</li>
-</ul>
-<ul>
-  <li>list 1</li>
-  <li>list 2</li>
-</ul>
+![pic3](/assets/images/post/001/19_03.png)
+<figcaption class="caption">너무 빡빡하다. 좌우를 늘려야겠다.</figcaption>
+
+
+#### * [case 2] margin: 0 5px 0 5px
+
+{% highlight scss %}
+code,
+tt
+	margin: 0 5px 0 5px
 {% endhighlight %}
 
-* 리스트 그룹화 - ordered list
-{% highlight html %}
-<ol>
-  <li>list 1</li>
-  <li>list 2</li>
-</ol>
-<ol>
-  <li>list 1</li>
-  <li>list 2</li>
-</ol>
+![pic4](/assets/images/post/001/19_04.png)
+<figcaption class="caption">좌우에 여유가 생긴다</figcaption>
+
+
+#### * [case 3] margin: 0 20px 0 0
+
+{% highlight scss %}
+code,
+tt
+	margin: 0 20px 0 0
 {% endhighlight %}
+
+![pic5](/assets/images/post/001/19_05.png)
+<figcaption class="caption">오른쪽 여백이 늘어난다</figcaption>
+
+#### * [case 4] margin: 0 0 0 20px
+
+{% highlight scss %}
+code,
+tt
+	margin: 0 0 0 20px
+{% endhighlight %}
+
+![pic5](/assets/images/post/001/19_05.png)
+<figcaption class="caption">왼쪽 여백이 늘어난다</figcaption>
+
+**[case2]** 가 가장 안정적으롭 보였다. 그러나 이 때 왼쪽 여백이 증가함에 따라 코드블럭의 첫째 줄에도 왼쪽 여백이 증가하는 결과가 생겼다. (근데 왜 첫째 줄만 마진이 늘어나는거지? 마진은 왼쪽 전체에 대해 늘어나야되는거 아닌가?)
+
 
 ---
 
