@@ -1,7 +1,7 @@
 ---
 title: "코드블럭 내 들여쓰기 문제 해결"
 layout: post
-date: 2017-01-19 10:02
+date: 2017-01-20 17:39
 image: /assets/images/post/001/19_00title.png
 headerImage: true
 tag:
@@ -33,6 +33,7 @@ description: 코드블럭 내 들여쓰기 문제 해결
 ![pic2](/assets/images/post/001/19_02.png)
 <figcaption class="caption">애프터</figcaption>
 
+<br>
 
 .scss 코드를 변경할 때 첫 줄 들여쓰기가 되도록 설정한 적이 없는데 코드블록 안 첫번째 줄이 들여쓰기가 되는 현상이 생겼다. 변경한 코드는 아래와 같다.
 
