@@ -100,7 +100,7 @@ You will have the opportunity to select your preferred delivery method as your p
 
 ---
 
-## 추가) 당일 출고...!
+## 당일 출고...!
 
 * 주문완료 확인메일 수신 - 2017/01/10 18:14
 * 배송시작 확인메일 수신 - 2017/01/10 20:46
