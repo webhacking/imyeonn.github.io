@@ -1,0 +1,34 @@
+---
+title: "오늘의 관심사 - 네이처리퍼블릭/삼성페이"
+layout: post
+date: 2017-01-21 18:18
+image: /assets/images/post/001/21_00title.png
+headerImage: true
+tag:
+- 오늘의 관심사
+- 네이처리퍼블릭
+- 삼성페이
+blog: true
+author: Hyeyeon
+description: 오늘의 관심사
+---
+
+### Summary:
+
+오늘 접했던 소식 중 인상 깊은 내용들을 전합니다.
+
+---
+
+## 네이처리퍼블릭
+
+#### [화장품 모바일 매출 월 3천억원대 추세, 네이처리퍼블릭 쇼핑몰 개편 대응](http://www.thebk.co.kr/news/articleView.html?idxno=182340)
+
+
+---
+
+## 삼성페이
+
+#### [SSG닷컴, `삼성 페이` 단다...온라인 간편결제 강화](http://www.etnews.com/20170118000256)
+
+
+---
