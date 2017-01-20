@@ -253,6 +253,7 @@ padding 속성을 이용한다.
 <br>
 
 `float`를 이용하면 이미지를 왼쪽 혹은 오른쪽으로 옮기고 그 빈공간에 글자를 채울 수 있다.
+샘플 이미지가 너무 커서 `width` 속성으로 크기를 줄였다.
 
 * `float: left;` : 그림 왼쪽 정렬
 *  `float: right;` : 그림 오른쪽 정렬
@@ -278,10 +279,8 @@ padding 속성을 이용한다.
 {% endhighlight %}
 
 ![pic7](/assets/images/post/001/17_07.png)
-<figcaption class="caption">float: left;</figcaption>
 
 ![pic8](/assets/images/post/001/17_08.png)
-<figcaption class="caption">float: right;</figcaption>
 
 ---
 
