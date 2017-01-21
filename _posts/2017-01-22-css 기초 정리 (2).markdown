@@ -1,8 +1,8 @@
 ---
 title: "css 기초 정리 (2) - css 기본 세팅, 박스모델, margin, padding"
 layout: post
-date: 2017-01-19 10:02
-image: /assets/images/post/001/17_00title.png
+date: 2017-01-22 09:38
+image: /assets/images/post/001/22_00title.png
 headerImage: true
 tag:
 - css
