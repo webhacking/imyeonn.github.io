@@ -150,20 +150,22 @@ nav ol{
 이제부턴 html 내에 디자인에 관한 영역을 하나의 파일로 따로 빼올 것이다.
 
 
-#### 1. html 내부 `<style>` ~ `</style>` 사이에 있던 css 코드를 복사한다.
+##### 1. html 내부 `<style>` ~ `</style>` 사이에 있던 css 코드를 복사한다.
 
-#### 2. **style.css** 라는 새로운 파일을 생성 후 그 안에 1번의 코드를 붙여넣는다.
+##### 2. **style.css** 라는 새로운 파일을 생성 후 그 안에 1번의 코드를 붙여넣는다.
 
-#### 3. 기존 html의 `<style>`과 `</style>` 태그는 삭제한다.
+##### 3. 기존 html의 `<style>`과 `</style>` 태그는 삭제한다.
 
-#### 4. 기존 html의 `<style>`이 있던 자리에 `<link rel="stylesheet" type="text/css" href="옮긴 .css파일 주소">`를 추가한다.
+##### 4. 기존 html의 `<style>`이 있던 자리에 `<link rel="stylesheet" type="text/css" href="옮긴 .css파일 주소">`를 추가한다.
 
-#### 5. index.html을 리로드해서 .css가 제대로 적용되는지 확인한다.
+##### 5. index.html을 리로드해서 .css가 제대로 적용되는지 확인한다.
 
-#### 6. 이제 나머지 html들도 똑같이 `<style>`을 지워버리고 `<link ~>`를 추가해준다.
+##### 6. 이제 나머지 html들도 똑같이 `<style>`을 지워버리고 `<link ~>`를 추가해준다.
 
 <br>
+
 * 수정 후 html
+
 {% highlight html %}
 <!-- css_basics_2_page1.html -->
 <!DOCTYPE html>
@@ -193,7 +195,9 @@ nav ol{
 {% endhighlight %}
 
 <br>
+
 * 수정 후 css
+
 {% highlight css %}
 /*css_basics_2_style.css*/
 /*<style> 안 코드만 빼옴.*/
