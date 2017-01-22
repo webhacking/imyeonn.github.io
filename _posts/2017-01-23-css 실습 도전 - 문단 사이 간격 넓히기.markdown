@@ -1,0 +1,248 @@
+---
+title: "css 실습 도전 - 문단 사이 간격 넓히기"
+layout: post
+date: 2017-01-23 08:07
+image: /assets/images/post/001/24_00title.png
+headerImage: true
+tag:
+- css
+- css 기초
+- 생활코딩
+blog: true
+author: Hyeyeon
+description: css 실습
+---
+
+### Summary:
+
+[css 1](https://imyeonn.github.io/2017/01/19/css-%EA%B8%B0%EC%B4%88-%EC%A0%95%EB%A6%AC-(1)-css-%EA%B8%B0%EB%B3%B8-%EC%84%B8%ED%8C%85,-%EB%B0%95%EC%8A%A4%EB%AA%A8%EB%8D%B8,-margin,-padding.html), [css 2](https://imyeonn.github.io/2017/01/22/css-%EA%B8%B0%EC%B4%88-%EC%A0%95%EB%A6%AC-(2)-css-%EC%86%8D%EC%84%B1-%EC%88%98%EC%A0%95%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95-2%EA%B0%80%EC%A7%80.html)에서 배운 내용을 토대로 블로그 포스트의 문단 사이 간격을 넓혔습니다.
+
+---
+
+## 문제 인식
+
+생활코딩의 css 기초 과정을 수강하면서 margin, border, padding의 개념을 익혔다. 이를 바탕으로 내 블로그의 빡빡한 문단 간격을 넓혀보자.
+
+[어제 올린 포스팅]()이다. 4개 문단이 있는데 사이 간격이 너무 빡빡하게 보인다. 가독성도 떨어지는 것 같고. 줄간격은 괜찮은데 문단 사이를 좀 더 멀리 떨어뜨리고 싶었다.
+
+![pic1](/assets/images/post/001/24_01.png)
+
+---
+
+## 배운 건 써먹자
+
+[css 1](https://imyeonn.github.io/2017/01/19/css-%EA%B8%B0%EC%B4%88-%EC%A0%95%EB%A6%AC-(1)-css-%EA%B8%B0%EB%B3%B8-%EC%84%B8%ED%8C%85,-%EB%B0%95%EC%8A%A4%EB%AA%A8%EB%8D%B8,-margin,-padding.html), [css 2](https://imyeonn.github.io/2017/01/22/css-%EA%B8%B0%EC%B4%88-%EC%A0%95%EB%A6%AC-(2)-css-%EC%86%8D%EC%84%B1-%EC%88%98%EC%A0%95%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95-2%EA%B0%80%EC%A7%80.html)에서 글을 둘러싸는 마진, 보더, 패딩에 대해 배웠다. 이것들을 내 블로그에 적용하면 문단 사이 간격을 넓힐 수 있을 것만 같다.
+
+---
+
+## 크롬 개발자도구 활용
+
+먼저 내 블로그의 css 세팅이 어떻게 되어있는지 확인한다. 문제의 지점에 마우스를 두고 `우클릭-검사`를 클릭하여 현재 어떻게 스타일이 구성됐는지 살펴본다.
+
+![pic2](/assets/images/post/001/24_02.png)
+
+문단은 `<p>` 태그로 덩어리가 만들어져 있었다. 그 덩어리 위 아래 마진(margin)이 있는데 `margin-bottom: 20px;`인 것으로 보다 각 문단마다 문단 아래 20px의 여유를 두나 보다. 이 속성이 어느 파일에 저장되어있는지 알기 위해 블로그 생성 폴더를 뒤져봤다.(깃허브 지킬 테마를 이용 중이다.) **'깃허브 아이디.github.io/_sass/base/general.sass'** 에 스타일 속성이 들어있었다.
+
+{% highlight scss %}
+p
+	line-height: 1.9
+	color: $alpha
+	font-weight: 300
+	margin-bottom: 20px    // 이 부분!!
+	letter-spacing: 0.3px
+
+	@media #{$mobile}
+		letter-spacing: 0.2px
+{% endhighlight %}
+
+<br>
+
+#### padding: 10px
+
+이제 어느 정도 여유를 두는 게 괜찮을 지 여러 값들을 넣어본다. 나는 `padding: 10px;`를 추가해봤다. 음, 너무 넓은 것 같다.
+
+![pic3](/assets/images/post/001/24_03.png)
+
+![pic4](/assets/images/post/001/24_04.png)
+<figcaption class="caption">전체 모습</figcaption>
+
+
+#### padding: 5px
+
+`padding: 5px;`로 바꿨다. 딱 좋다.
+
+![pic5](/assets/images/post/001/24_05.png)
+
+![pic6](/assets/images/post/001/24_06.png)
+<figcaption class="caption">전체 모습</figcaption>
+
+---
+
+## 코드 바꾸기
+
+크롬 개발자도구로 실험한 결과 `padding: 5px;`을 추가하는 것이 가장 적당했다. 이제 이 변화를 기존 general.sass에 추가하면 끝이다. 변경사항을 저장하고 페이지를 리로드해본다.
+
+{% highlight scss %}
+p
+	line-height: 1.9
+	color: $alpha
+	font-weight: 300
+	margin-bottom: 20px
+  padding: 5px
+	letter-spacing: 0.3px
+
+	@media #{$mobile}
+		letter-spacing: 0.2px
+{% endhighlight %}
+
+![pic7](/assets/images/post/001/24_07.png)
+
+
+* 폭: `width: 150px;`
+* 왼쪽 정렬: `float: left;`
+* 테두리: `border-right: 1px solid gray;`
+
+{% highlight html %}
+<!-- <nav> 꾸미기 -->
+<style>
+nav {
+  width: 150px;
+  float: left;
+  border-right: 1px solid gray;
+  height: 600px;
+}
+</style>
+{% endhighlight %}
+
+![pic3](/assets/images/post/001/22_03.png)
+
+---
+
+### <article> 수정
+
+`<article>`을 왼쪽 정렬하고 왼쪽 테두리와의 간격을 조금 둘 것이다. 마찬가지로 **css_basics_2_page1.html** 파일을 열어서 해당 css코드를 추가한다.
+
+* 왼쪽 정렬: `float: left;`
+* 테두리와 간격: `padding-left: 20px`
+
+{% highlight html %}
+<!-- <article> 꾸미기 -->
+<style>
+article {
+  float: left;
+  padding-left: 20px;
+}
+</style>
+{% endhighlight %}
+
+![pic4](/assets/images/post/001/22_04.png)
+
+---
+
+### <nav> 추가수정
+
+만약 `<nav>`의 리스트 앞에 붙어있는 숫자들을 없애고 싶다면 `<ol>`에서 숫자를 없애는 코드를 추가한다.
+
+* 숫자 없애기: `list-style: none;`
+
+{% highlight html %}
+<style>
+nav ol{
+  list-style: none;
+}
+</style>
+{% endhighlight %}
+
+![pic5](/assets/images/post/001/22_05.png)
+
+---
+
+## 수정방법 2: css를 html로부터 분리하기
+
+첫번째로 시도했던 방법은 처음에 생각해내기는 쉽지만 하나의 수정사항이 생겼을 때 관련된 모든 html 파일을 모두 동시에 수정해야 한다는 단점이 있다. 코드 한 줄을 수정하려고 html을 4번이나 열어서 복붙을 해야 하는 것이다. 비효율적이다.
+
+이제부턴 html 내에 디자인에 관한 영역을 하나의 파일로 따로 빼올 것이다.
+
+<br>
+
+##### 1. html 내부 `<style>` ~ `</style>` 사이에 있던 css 코드를 복사한다.
+
+##### 2. **style.css** 라는 새로운 파일을 생성 후 그 안에 1번의 코드를 붙여넣는다.
+
+##### 3. 기존 html의 `<style>`과 `</style>` 태그는 삭제한다.
+
+##### 4. 기존 html의 `<style>`이 있던 자리에 `<link rel="stylesheet" type="text/css" href="옮긴 .css파일 주소">`를 추가한다.
+
+##### 5. index.html을 리로드해서 .css가 제대로 적용되는지 확인한다.
+
+##### 6. 이제 나머지 html들도 똑같이 `<style>`을 지워버리고 `<link ~>`를 추가해준다.
+
+<br>
+
+* 수정 후 html
+
+{% highlight html %}
+<!-- css_basics_2_page1.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css_basics_2_style.css">
+    <title></title>
+  </head>
+  <body>
+    <header>
+      <h1>타이틀(헤더)</h1>
+    </header>
+    <nav>
+      <ol>
+        <li><a href="/css_basics_2_page1.html">목차 1</a></li>
+        <li><a href="/css_basics_2_page2.html">목차 2</a></li>
+        <li><a href="/css_basics_2_page3.html">목차 3</a></li>
+      </ol>
+    </nav>
+    <article>
+      <h2>목차 1</h2>
+      목차 1에 대한 설명입니다.
+    </article>
+  </body>
+</html>
+{% endhighlight %}
+
+<br>
+
+* 수정 후 css
+
+{% highlight css %}
+/*css_basics_2_style.css*/
+/*<style> 안 코드만 빼옴.*/
+header {
+  border-bottom: 1px solid gray;
+  padding: 20px;
+}
+nav {
+  width: 150px;
+  float: left;
+  border-right: 1px solid gray;
+  height: 600px;
+}
+nav ol{
+  list-style: none;
+}
+article {
+  float: left;
+  padding-left: 20px;
+}
+{% endhighlight %}
+
+![pic6](/assets/images/post/001/22_06.png)
+
+---
+
+### 왜 이 방법이 좋을까?
+
+변경사항이 생겼을 때 각 html마다 들어가서 스타일을 바꿀 필요가 없다. **.css** 에 접속한 뒤 스타일 속성을 단 한번만 변경하면 모든 html에 변경사항이 적용된다. 훨씬 편하다. 아 그래서 내 블로그도 **.sass** 폴더가 따로 있던 거구나.
+
+또한 중복되는 코드를 한 번으로 퉁치는 것이기 때문에 데이터 저장 용량 부담도 덜하게 된다는 장점도 있다.
+
+---
