@@ -4,6 +4,7 @@ layout: post
 date: 2017-01-01 09:09
 image: /assets/images/post/001/01_00title.jpg
 headerImage: true
+category: Blog
 tag:
 - 깃허브
 - jekyll

@@ -4,6 +4,7 @@ layout: post
 date: 2017-01-18 21:17
 image: /assets/images/post/001/16_00title.png
 headerImage: true
+category: Web
 tag:
 - html
 - html 기초

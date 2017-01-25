@@ -4,6 +4,7 @@ layout: post
 date: 2017-01-20 17:39
 image: /assets/images/post/001/19_00title.png
 headerImage: true
+category: Blog
 tag:
 - 코드블럭
 - sass

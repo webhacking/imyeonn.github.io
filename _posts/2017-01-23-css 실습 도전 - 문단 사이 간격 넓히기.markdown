@@ -4,7 +4,7 @@ layout: post
 date: 2017-01-23 08:07
 image: /assets/images/post/001/24_00title.png
 headerImage: true
-category: web
+category: Web
 tag:
 - css
 - css 기초

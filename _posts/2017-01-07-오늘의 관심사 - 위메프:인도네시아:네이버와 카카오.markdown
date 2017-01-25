@@ -4,6 +4,7 @@ layout: post
 date: 2017-01-07 09:25
 image: /assets/images/post/001/04_00title.png
 headerImage: true
+category: E-Commerce
 tag:
 - 오늘의 관심사
 - 위메프

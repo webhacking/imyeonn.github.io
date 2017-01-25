@@ -4,6 +4,7 @@ layout: post
 date: 2017-01-10 18:02
 image: /assets/images/post/001/04_00title.png
 headerImage: true
+category: E-Commerce
 tag:
 - 글로벌 브랜드
 - 패션브랜드
