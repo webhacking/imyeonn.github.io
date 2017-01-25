@@ -4,8 +4,9 @@
 
 <p align="center">Using Indigo Minimalist Jekyll Template - <a href="http://sergiokopplin.github.io/indigo/">Demo</a></p>
 
-<p>
+<br>
 
----
+<br>
 
-[MIT](http://kopplin.mit-license.org/) License © Sérgio Kopplin
+
+<p align="center">[MIT](http://kopplin.mit-license.org/) License © Sérgio Kopplin</p>
