@@ -1,5 +1,5 @@
 ---
-title: "오늘의 관심사 - 패션O2O 브리치/Branded Video"
+title: "오늘의 관심사 - 패션O2O 브리치/Branded Video/소셜커머스의 변화"
 layout: post
 date: 2017-01-24 09:58
 image: /assets/images/post/001/04_00title.png
@@ -8,6 +8,7 @@ tag:
 - 오늘의 관심사
 - 패션O2O
 - Branded Video
+- 소셜커머스의 변화
 blog: true
 author: Hyeyeon
 description: 오늘의 관심사
