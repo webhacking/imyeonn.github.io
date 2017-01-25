@@ -4,7 +4,7 @@
 
 <p align="center">Using Indigo Minimalist Jekyll Template - <a href="http://sergiokopplin.github.io/indigo/">Demo</a></p>
 
-***
+<p>
 
 ---
 
