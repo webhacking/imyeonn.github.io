@@ -43,8 +43,7 @@ github:  imyeonn
 # reddit: username
 # medium: medium
 # vimeo: myvimeo
-instagram: myinstagram
-
+# instagram: myinstagram
 email:  imyeonn@gmail.com
 
 authors:
@@ -94,9 +93,6 @@ show-author: true
 
 # do you want some animations?
 animation: true
-
-# 추가
-showHeader: false
 
 sass:
     sass_dir: _sass
