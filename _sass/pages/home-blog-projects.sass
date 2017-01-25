@@ -31,8 +31,6 @@
         display: block
         width: 95%
         margin: 0 auto
-        // 수정
-        background-color: #333
 
     > .item > .url
         width: 100%
@@ -43,8 +41,9 @@
     > .item > .url > .title
         margin: 0
         width: 75%
-        font-weight: 500
+        font-weight: 300
         transition: all ease-in-out .2s
+        color: $gama
 
     > .item:hover > .url > .title
         color: $delta
@@ -62,8 +61,6 @@
         -webkit-font-smoothing: antialiased
         text-rendering: optimizeLegibility
 
-    > .item:hover > .url > .post-tags
-        color: $codebackground
 
     // maybe we can't nest html5 elements
     // can you help me?
