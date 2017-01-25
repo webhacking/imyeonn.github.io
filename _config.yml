@@ -14,7 +14,7 @@ url:  https://imyeonn.github.io
 # your url: http://USERNAME.github.io
 
 # jekyll 3.0 error
-# permalink:    /:title/
+permalink: /:categories/:title/
 
 markdown:  kramdown
 highlighter:  rouge
