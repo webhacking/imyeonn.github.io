@@ -33,7 +33,6 @@ disqus:  mydisqus
 # facebook: myfacebook
 # twitter: mytwitter
 # google: mygoogle
-# instagram: myinstagram
 # pinterest: mypinterest
 linkedin: mylinkedin
 # youtube: myyoutube
@@ -44,6 +43,8 @@ github:  imyeonn
 # reddit: username
 # medium: medium
 # vimeo: myvimeo
+instagram: myinstagram
+
 email:  imyeonn@gmail.com
 
 authors:
