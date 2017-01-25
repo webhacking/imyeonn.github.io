@@ -95,6 +95,9 @@ show-author: true
 # do you want some animations?
 animation: true
 
+# 추가
+showHeader: false
+
 sass:
     sass_dir: _sass
     style: :compressed
