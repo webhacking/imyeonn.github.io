@@ -7,7 +7,7 @@ description:  A blog about E-commerce and Product Management
 
 # if it's an external image, update below for true
 # better with square images
-external-image: true
+external-image: false
 picture:  assets/images/profile.jpg
 
 url:  https://imyeonn.github.io
