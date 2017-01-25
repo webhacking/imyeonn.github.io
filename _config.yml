@@ -46,12 +46,11 @@ github:  imyeonn
 # instagram: myinstagram
 email:  imyeonn@gmail.com
 
-authors:
-    johndoe:
-        name: Hyeyeon
-        bio: I'm Hyeyeon, interested in E-commerce and Product Management.
-        external-image: true
-        picture: assets/images/profile.jpg
+author:
+  name: Hyeyeon
+  bio: I'm Hyeyeon, interested in E-commerce and Product Management.
+  external-image: false
+  picture: assets/images/profile.jpg
     #     twitter: johndoe
     # jamesfoster:
     #     name: James Foster
