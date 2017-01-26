@@ -4,7 +4,7 @@ layout: post
 date: 2017-01-22 15:49
 image: /assets/images/post/001/23_00title.png
 headerImage: true
-category: 서비스 체험기
+category: 이커머스
 tag:
 - 위메프
 - 소셜커머스
