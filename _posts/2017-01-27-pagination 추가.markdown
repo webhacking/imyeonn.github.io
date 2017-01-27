@@ -1,7 +1,7 @@
 ---
 title: "지킬 블로그에 페이지 구분 기능(pagination) 추가하기"
 layout: post
-date: 2017-01-26 15:42
+date: 2017-01-27 15:42
 image: /assets/images/post/001/29_00title.png
 headerImage: true
 category: Blog
