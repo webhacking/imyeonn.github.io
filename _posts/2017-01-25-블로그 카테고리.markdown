@@ -1,11 +1,12 @@
 ---
-title: "블로그 카테고리 구성 계획"
+title: "블로그 카테고리 계획하고 만들어보기"
 layout: post
 date: 2017-01-25 13:11
 image: /assets/images/post/001/27_00title.png
 headerImage: true
 category: 카테고리
 tag:
+- 지킬 블로그
 - 카테고리
 - 목차
 blog: true
@@ -19,9 +20,9 @@ description: 카테고리 정리용
 
 ---
 
-![pic1](/assets/images/post/001/27_00title.png)
-
 ## 1. 카테고리 만들기
+
+포스팅이 쌓여갈수록 카테고리가 필요했다. 네이버 블로그였다면 `설정` 창에서 몇 번의 클릭으로 쉽게 추가/삭제가 가능하지만 지킬은 그런 게 없다. 뚝딱뚝딱 스스로 만들어내야 한다. 해보자.
 
 - Web
   - html
@@ -63,3 +64,4 @@ description: 카테고리 정리용
 ## 6. 완성
 
 ---
+![pic1](/assets/images/post/001/27_00title.png)

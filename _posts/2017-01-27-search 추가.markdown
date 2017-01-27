@@ -1,0 +1,27 @@
+---
+title: "지킬 블로그에 카테고리 기능 추가하기"
+layout: post
+date: 2017-01-26 10:37
+image: /assets/images/post/001/28_00title.png
+headerImage: true
+category: Blog
+tag:
+- 지킬 블로그
+- 카테고리
+- 태그
+blog: true
+author: Hyeyeon
+description: 지킬 블로그에 카테고리 기능 추가하기
+---
+
+### Summary:
+
+지킬 블로그 포스팅들을 그룹화할 수 있는 카테고리 기능을 추가했습니다.
+
+---
+
+## category? tag?
+
+포스팅이 쌓여갈수록 카테고리가 필요했다. 
+
+---
