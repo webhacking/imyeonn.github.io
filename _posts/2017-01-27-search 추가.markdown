@@ -98,11 +98,12 @@ layout: null
 ---
 
 
-## _plugins 폴더 생성 및 파일 넣기
+## \_plugins 폴더 생성 및 파일 넣기
 
-마찬가지로 루트 폴더 아래 _plugins 폴더를 만든 뒤 아래 1개 파일을 추가한다.
+마찬가지로 루트 폴더 아래 \_plugins 폴더를 만든 뒤 아래 1개 파일을 추가한다.
 
 1. 파일명: simple_search_filter.rb
+
 {% highlight raw %}
 module Jekyll
   module CharFilter
