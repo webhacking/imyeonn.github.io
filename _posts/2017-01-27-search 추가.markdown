@@ -489,3 +489,120 @@ function isJSON(json){
 {% endhighlight %}
 
 ---
+
+
+## _plugins 폴더 생성 및 파일 넣기
+
+마찬가지로 루트 폴더 아래 _plugins 폴더를 만든 뒤 아래 1개 파일을 추가한다.
+
+1. 파일명: simple_search_filter.rb
+{% highlight raw %}
+module Jekyll
+  module CharFilter
+    def remove_chars(input)
+      input.gsub! '\\','&#92;'
+      input.gsub! /\t/, '    '
+      input.strip_control_and_extended_characters
+    end
+  end
+end
+
+Liquid::Template.register_filter(Jekyll::CharFilter)
+
+class String
+  def strip_control_and_extended_characters()
+    chars.each_with_object("") do |char, str|
+      str << char if char.ascii_only? and char.ord.between?(32,126)
+    end
+  end
+end
+{% endhighlight %}
+
+---
+
+## 루트 폴더에 search.html 만들기
+
+{% highlight html %}
+---
+layout: default
+page_title: Search
+permalink: /search/
+---
+<div id="results">
+  <h1><!-- `key` listing for `value` --></h1>
+
+  <ul class="results">
+    <!-- results lists -->
+  </ul>
+</div>
+
+<!— Html Elements for Search -->
+<div id="search-container">
+<input type="text" id="search-input" placeholder="search...">
+<ul id="results-container"></ul>
+</div>
+
+<!-- Script pointing to jekyll-search.js -->
+<script src="{{site.baseurl}}/dest/jekyll-search.js" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+      SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        json: '{{ site.baseurl }}/search2.json',
+        searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+        noResultsText: 'No results found',
+        limit: 10,
+        fuzzy: false,
+        exclude: ['Welcome']
+      })
+</script>
+{% endhighlight %}
+
+---
+
+## 이미지 파일을 모아둔 폴더에 검색 아이콘 저장하기
+
+나의 경우 `깃헙아이디.github.io` > `assets` > `images` > `icon` 에 search.png를 저장했다. 검색 아이콘은 [여기](https://thenounproject.com/)에서 검색 후 다운로드받았다.
+
+---
+
+## \_layout 폴더 안 default.html에 링크 넣기
+
+`<a href="/search/"><img src="/assets/images/icon/search.png"/></a>`를 default.html 안에 원하는 자리에 추가한다. 나는 페이지 아래쪽에 추가했다.
+
+{% highlight html %}
+<!-- default.html 내 <body> 일부 -->
+ <body>
+     <div class="wrapper-{% if site.width == "normal" %}normal{% elsif site.width == "large" %}large{% endif %}">
+         {% if page.tag %}
+             <div class="post">
+         {% else %}
+             {% if showHeader != true %}
+                 <div class="page {{ page.title | downcase }}">
+             {% else %}
+                 <div class="{{ page.title | downcase }}">
+             {% endif %}
+         {% endif %}
+
+             {{ content }}
+         </div>
+         **<a href="/search/"><img src="/assets/images/icon/search.png"/></a>**
+     </div>
+
+     {% include icons.html %}
+
+     {% include analytics-google.html %}
+ </body>
+ {% endhighlight %}
+
+---
+
+## 변경사항 푸쉬 후 결과 확인
+
+검색창이 제대로 달렸나 확인해본다.
+
+![pic1](/assets/images/post/001/30_01.png)
+
+---
