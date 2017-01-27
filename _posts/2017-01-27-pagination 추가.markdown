@@ -6,7 +6,8 @@ image: /assets/images/post/001/29_00title.png
 headerImage: true
 category: Blog
 tag:
-- 지킬 블로그
+- 깃허브
+- JEKYLL
 - pagination
 blog: true
 author: Hyeyeon
@@ -89,3 +90,13 @@ paginate_path: "blog/:num/"
     > .hidden
         visibility: hidden
 {% endhighlight %}
+
+---
+
+## 결과 확인하기
+
+![pic2](/assets/images/post/001/29_02.png)
+
+페이지네이션이 적용됐다.
+
+---

@@ -6,9 +6,10 @@ image: /assets/images/post/001/19_00title.png
 headerImage: true
 category: Blog
 tag:
+- 깃허브
+- JEKYLL
 - 코드블럭
 - sass
-- 들여쓰기
 blog: true
 author: Hyeyeon
 description: 코드블럭 내 들여쓰기 문제 해결

@@ -6,7 +6,8 @@ image: /assets/images/post/001/27_00title.png
 headerImage: true
 category: 카테고리
 tag:
-- 지킬 블로그
+- 깃허브
+- JEKYLL
 - 카테고리
 - 목차
 blog: true
