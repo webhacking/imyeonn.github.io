@@ -7,7 +7,7 @@ headerImage: true
 category: Blog
 tag:
 - 깃허브
-- JEKYLL
+- jekyll
 - pagination
 blog: true
 author: Hyeyeon
