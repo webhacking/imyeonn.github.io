@@ -1,7 +1,7 @@
 ---
 title: "파이썬 공부(뷰티풀 수프 기초)"
 layout: post
-date: 2017-01-11 20:13
+date: 2017-01-12 23:13
 image: /assets/images/post/001/08_00title.jpg
 headerImage: true
 category: Python
