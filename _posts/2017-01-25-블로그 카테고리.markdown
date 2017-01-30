@@ -73,6 +73,11 @@ description: 카테고리 정리용
 
 ## 2. 카테고리 속성 넣기
 
+[3 Simple steps to setup Jekyll Categories and Tags](https://blog.webjeda.com/jekyll-categories/)을 참고했다.
+
+1. 각 포스트 마크다운에 `category: 00` 추가
+2. blog/categories.html 생성
+
 ---
 
 ## 3. 카테고리 박스 고안하기
