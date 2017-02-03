@@ -8,7 +8,6 @@ category: 기획
 tag:
 - Axure
 - 기획 툴
--
 blog: true
 author: Hyeyeon
 description: Axure 설치하기
@@ -28,5 +27,7 @@ IT 기획 연구소의 [Axure RP 8 버전 오픈 소식 공유 및 가격 안내
 3. 라이선스 받기
 4. 프로그램 설치하기
 
+![pic1](/assets/images/post/001/28_01.png)
+![pic2](/assets/images/post/001/28_02.png)
 
 ---
