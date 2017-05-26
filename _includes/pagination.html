@@ -5,7 +5,7 @@
         <span class="previous hidden">«</span>
     {% endif %}
 
-    <span class="page_number ">page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    <span class="page_number ">page {{ paginator.page }} of <a href="{{ site.url }}{{ paginator.total_pages }}">{{ paginator.total_pages }}</a></span>
 
     {% for p in paginator.total_pages %}
         {% if p == paginator.page %}
