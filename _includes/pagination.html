@@ -7,14 +7,14 @@
 
     <span class="page_number ">page {{ paginator.page }} of {{ paginator.total_pages }}</span>
 
-    {% for p in (first..last) %}
+    {% for p in paginator.total_pages %}
         {% if p == paginator.page %}
             <li class="page-number active">{{ p }}</li>
             {% elsif p == 1 %}
-            <li class="page-number"><a href="{{ site.baseurl }}/">{{ p }}</a></li>
+            <li class="page-number"><a href="{{ site.url }}/">{{ p }}</a></li>
         {% else %}
             <li class="page-number"><a
-                        href="{{ site.baseurl }}{{ site.paginate_path | replace: ':num', p }}">{{ p }}</a></li>
+            href="{{ site.url }}{{ site.paginate_path | replace: ':num', p }}">{{ p }}</a></li>
         {% endif %}
     {% endfor %}
 
