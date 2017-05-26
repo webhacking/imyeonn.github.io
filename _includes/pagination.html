@@ -1,29 +1,15 @@
-<div class="pagination">
+<ul id="pagination" role="navigation">
     {% if paginator.previous_page %}
-        <a href="{{ site.url }}{{ paginator.previous_page_path }}" class="previous">«</a>
+        <li id="page-prev"><a href="{{ site.url }}{{ paginator.previous_page_path }}"><span class="sr-only">«</span></a></li>
     {% else %}
-        <span class="previous hidden">«</span>
+        <li id-"page-prev" class="disabled"><span class="sr-only">«</span></li>
     {% endif %}
 
-    <span class="page_number ">page {{ paginator.page }} of <a href="{{ site.url }}{{ paginator.total_pages }}">{{ paginator.total_pages }}</a></span>
-
-    {% for p in paginator.total_pages %}
-        {% if p == paginator.page %}
-            <li class="page-number active">{{ p }}</li>
-            {% elsif p == 1 %}
-            <li class="page-number"><a href="{{ site.url }}/">{{ p }}</a></li>
-        {% else %}
-            <li class="page-number"><a
-            href="{{ site.url }}{{ site.paginate_path | replace: ':num', p }}">{{ p }}</a></li>
-        {% endif %}
-    {% endfor %}
-
-
-
+    <span class="page_number ">page {{ paginator.page }} of {{ paginator.total_pages }}</span>
 
     {% if paginator.next_page %}
-        <a href="{{ site.url }}{{ paginator.next_page_path }}" class="next">»</a>
+        <li id="page-next"><a href="{{ site.url }}{{ paginator.next_page_path }}"><span class="sr-only">»</span></a></li>
     {% else %}
-        <span class="next hidden">»</span>
+        <li id="page-next" class="disabled"><span class="sr-only">»</span></li>
     {% endif %}
-</div>
+</ul>
