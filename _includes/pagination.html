@@ -1,25 +1,29 @@
 <div class="pagination">
-  {% if paginator.previous_page %}
-      <a href="{{ site.url }}{{ paginator.previous_page_path }}" class="previous"><span class="sr-only">Previous Page</span></a>
-  {% else %}
-      <span class="sr-only">No Previous Page</span>
-  {% endif %}
+    {% if paginator.previous_page %}
+        <a href="{{ site.url }}{{ paginator.previous_page_path }}" class="previous">«</a>
+    {% else %}
+        <span class="previous hidden">«</span>
+    {% endif %}
 
-  {% for p in (first..last) %}
-      {% if p == paginator.page %}
-          <li class="page-number active">{{ p }}</li>
-          {% elsif p == 1 %}
-          <li class="page-number"><a href="{{ site.baseurl }}/">{{ p }}</a></li>
-      {% else %}
-          <li class="page-number"><a
-                      href="{{ site.baseurl }}{{ site.paginate_path | replace: ':num', p }}">{{ p }}</a></li>
-      {% endif %}
-  {% endfor %}
+    <span class="page_number ">page {{ paginator.page }} of {{ paginator.total_pages }}</span>
 
-  {% if paginator.next_page %}
-      <a href="{{ site.url }}{{ paginator.next_page_path }}" class="next"><span class="sr-only">Next Page</span></a>
-      </li>
-  {% else %}
-      <span class="sr-only">No Next Page</span>
-  {% endif %}
+    {% for p in (first..last) %}
+        {% if p == paginator.page %}
+            <li class="page-number active">{{ p }}</li>
+            {% elsif p == 1 %}
+            <li class="page-number"><a href="{{ site.baseurl }}/">{{ p }}</a></li>
+        {% else %}
+            <li class="page-number"><a
+                        href="{{ site.baseurl }}{{ site.paginate_path | replace: ':num', p }}">{{ p }}</a></li>
+        {% endif %}
+    {% endfor %}
+
+
+
+
+    {% if paginator.next_page %}
+        <a href="{{ site.url }}{{ paginator.next_page_path }}" class="next">»</a>
+    {% else %}
+        <span class="next hidden">»</span>
+    {% endif %}
 </div>
