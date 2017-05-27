@@ -5,6 +5,19 @@
         <li id-"page-prev" class="disabled"><span class="sr-only">No Previous Page</span></li>
     {% endif %}
 
+
+
+
+    {% for p in (first..last) %}
+      {% if p == paginator.page %}
+        <li class="page-number active">{{ p }}</li>
+        {% elsif p == 1 %}
+        <li class="page-number"><a href="{{ site.url }}/">{{ p }}</a></li>
+        {% else %}
+        <li class="page-number"><a href="{{ site.url }}{{ site.paginate_path | replace: ':num', p }}">{{ p }}</a></li>
+      {% endif %}
+    {% endfor %}
+
     <span class="page_number ">page {{ paginator.page }} of {{ paginator.total_pages }}</span>
 
     {% if paginator.next_page %}
