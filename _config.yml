@@ -10,7 +10,8 @@ description:  A blog about E-commerce and Product Management
 external-image: false
 picture:  assets/images/profile.jpg
 
-url:  https://imyeonn.github.io
+baseurl: ''
+url: 'https://imyeonn.github.io'
 # your url: http://USERNAME.github.io
 
 # jekyll 3.0 error
@@ -66,7 +67,8 @@ width:  large
 
 # if you don't need pagination, comment the *paginate* configs below
 paginate: 10
-paginate_path: "blog/page:num/"
+paginate_path: "/blog/:num/"
+# paginate_path: "blog/page:num/"
 
 # if you don't need projects, comment the *projects* configs below
 projects: true
