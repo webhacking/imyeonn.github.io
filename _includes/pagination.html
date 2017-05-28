@@ -19,7 +19,7 @@
         <li id="page-prev" class="disabled"><span class="sr-only">No Previous Page</span></li>
     {% endif %}
 
-    {% for p in (1..paginator.total_pages) %}
+    {% for p in (first..last) %}
       {% if p == paginator.page %}
         <li class="page-number active">{{ p }}</li>
         {% elsif p == 1 %}
