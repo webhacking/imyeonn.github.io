@@ -3,11 +3,11 @@
       {% assign first = 1 %}
       {% assign last = paginator.total_pages %}
     {% else %}
-      {% assign first = paginator.page | minus: 2 %}
+      {% assign first = paginator.page | minus: 4 %}
       {% if first < 1 %}
         {% assign first = 1 %}
       {% endif %}
-        {% assign last = first | plus: 4 %}
+        {% assign last = first | plus: 6 %}
         {% if last > paginator.total_pages %}
           {% assign last = paginator.total_pages %}
         {% endif %}
