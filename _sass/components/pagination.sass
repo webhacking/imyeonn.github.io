@@ -1,3 +1,8 @@
+.sr-only
+  position: absolute
+  top: -9999px
+  left: -9999px
+
 .pagination
   margin: 0
   padding: 33px 0
@@ -19,13 +24,13 @@
       height: 100%
       display:block
 
+    &:hover
+      background-color: #e6e6e6
+      border-radius: 4px
+
   > li + li
     margin-left: 10px
 
-  > li.active,
-    li:hover
-      background-color: #e6e6e6
-      border-radius: 4px
 
 #page-prev
   background: url(/assets/images/icon_pre.png) no-repeat center
