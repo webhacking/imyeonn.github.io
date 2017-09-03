@@ -1,15 +1,15 @@
-<div id="results">
-  <h1><!-- `key` listing for `value` --></h1>
-
-  <ul class="results">
-    <!-- results lists -->
-  </ul>
-</div>
-
 {% if page.title == "Home" %}
 {% endif %}
 
 {% if page.title != "Home" %}
+  <div id="results">
+    <h1><!-- `key` listing for `value` --></h1>
+
+    <ul class="results">
+      <!-- results lists -->
+    </ul>
+  </div>
+
   <!— Html Elements for Search -->
   <div id="search-container">
   <input type="text" id="search-input" placeholder="검색어 입력">
