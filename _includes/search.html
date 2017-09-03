@@ -6,11 +6,16 @@
   </ul>
 </div>
 
-<!— Html Elements for Search -->
-<div id="search-container">
-<input type="text" id="search-input" placeholder="검색어 입력">
-<ul id="results-container"></ul>
-</div>
+{% if page.title == "Home" %}
+{% endif %}
+
+{% if page.title != "Home" %}
+  <!— Html Elements for Search -->
+  <div id="search-container">
+  <input type="text" id="search-input" placeholder="검색어 입력">
+  <ul id="results-container"></ul>
+  </div>
+{% endif %}
 
 <div style="padding: 5px 0 30px 0;">
 </div>
