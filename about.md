@@ -2,40 +2,37 @@
 title: About
 layout: page
 ---
-![Profile Image]({{ site.url }}/{{ site.picture }})
+<!-- ![Profile Image]({{ site.url }}/{{ site.picture }}) -->
 
-<p></p>
+<p>좋은 프로덕트를 만들고 싶어 서비스기획으로 커리어를 시작했지만 기획과 디자인의 경계 사이에서 오락가락하고 있습니다. 세상 만사에 관심이 많아 좋다는 건 꼭 써보고 만져보고 먹어봅니다. 그러다가 체력이 떨어지면 좋아하는 아티스트의 노래를 들으며 뒹굴거립니다.</p>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>고객이 어떤 사람들인지 알아내고, 왜 우리 서비스를 써야 하는지를 정의하며 우리 서비스를 보다 편하게 이용할 수 있도록 서비스를 설계하는 것에 매력을 느꼈지만 녹록치 않은? 세상에 머리를 싸매는 중입니다.</p>
 
 <h2>Skills</h2>
 
 <ul class="skill-list">
-	<li>HTML - Jade - Haml - Erb</li>
-	<li>Responsive (Mobile First)</li>
-	<li>CSS (Stylus, Sass, Less)</li>
-	<li>Css Frameworks (Bootstrap, Foundation)</li>
-	<li>Javascript (Design Patterns, Testes)</li>
-	<li>NodeJS</li>
-	<li>AngularJS - ReactJS</li>
-	<li>Grunt - Gulp - Yeoman</li>
-	<li>Git</li>
-	<li>PHP</li>
-	<li>Python</li>
-	<li>MySQL - MongoDB</li>
-	<li>Scrum and Kanban</li>
-	<li>TDD e Continuous Integration</li>
+	<li>Product Management</li>
+	<li>E-Commerce Knowledge</li>
+	<li>HTML & CSS</li>
+	<li>Wireframing & Prototyping</li>
+	<li>Customer Analysis</li>
+	<li>Documentation</li>
 </ul>
 
-<h2>Projects</h2>
+<h2>Personal Attributes</h2>
+
+<ul class="skill-list">
+	<li>Love for Product</li>
+	<li>Analytical</li>
+	<li>Team Player</li>
+	<li>Motivating Others</li>
+	<li>Time Management</li>
+</ul>
+
+<!-- <h2>Projects</h2>
 
 <ul>
 	<li><a href="https://github.com/">Lorem Lorem</a></li>
 	<li><a href="https://github.com/">Ipsum Dolor</a></li>
 	<li><a href="https://github.com/">Dolor Lorem</a></li>
-</ul>
+</ul> -->
