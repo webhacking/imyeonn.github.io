@@ -29,8 +29,8 @@ layout: page
 	<li>Time Management</li>
 </ul>
 
-
----
+<p></p>
+<hr>
 
 <br>
 <br>
