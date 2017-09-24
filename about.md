@@ -29,6 +29,12 @@ layout: page
 	<li>Time Management</li>
 </ul>
 
+
+---
+
+<br>
+<br>
+
 <!-- <h2>Projects</h2>
 
 <ul>
